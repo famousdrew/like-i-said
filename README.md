@@ -28,9 +28,9 @@ Both drafts below came from the same few lines of notes, for a made-up bookkeepe
 > 2. Circle the charge.
 > 3. Write what it was for next to it. Four words is plenty.
 >
-> That is enough for me, and it is enough for anyone who asks later. (Yes, even the parking ones.)
+> That is enough for me and anyone else. (Yes, even the parking ones.)
 >
-> Next one of these lands on the 3rd.
+> Next one of these is due on the 3rd.
 
 Nothing is wrong with the first draft, and it could have been written for anyone. The second is hers. The number comes first, there is no greeting, the procedure is numbered, there is one dry aside, and the next date sits where a sign-off would go. Her bible lists each of those habits, with a line of her own writing behind it.
 
