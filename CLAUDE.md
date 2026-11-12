@@ -25,6 +25,7 @@ The kit must not be written in the style it helps people avoid.
 - No em dashes outside lines that show one as an example. A test checks this.
 - No "it's not X, it's Y," no reflexive lists of three, no announcing ("here's the thing"), no tidy capstone lines.
 - Plain, direct sentences. Prompts are written in the first person, as the user speaking to an AI.
+- The README's prose is the exception. It is written in the author's own voice, which allows a few things this list does not, such as a spaced hyphen used as a dash and sentences that start with "So" or "And." Do not tidy it to match the rest of the kit.
 - Each prompt in `prompts/` must work when pasted alone into any chat assistant, so it cannot refer to other files in this repository.
 
 ## Nothing personal in published files

@@ -1,14 +1,18 @@
 # Like I Said
 
-A kit for building a voice bible: a reference document that teaches an AI to write like you.
+A kit for building a voice bible, which is a reference document that teaches an AI to write like you.
 
-AI assistants have a house style. It is competent and easy to spot, and there is nothing wrong with it except that it is not yours. Asking for "my voice" does not help much, because the assistant has never read you, and almost nobody can describe their own voice well enough to brief it.
+You can spot AI writing from across the room these days. (Not that there's anything wrong with it.) It's clean and competent and it sounds like everybody, which is a problem if you were hoping to sound like you.
 
-A voice bible closes that gap with evidence. It is a few pages built from your own words: what you never do, what you do that an editor would wrongly fix, how your sentences and arguments are put together, and the numbers behind it. You hand it to Claude, ChatGPT, Gemini or any other assistant before it drafts or edits for you. The name comes from the one test every line has to pass: would you actually say this out loud?
+Telling the AI to "write in my voice" doesn't get you very far. It has never read you and, honestly, almost nobody can describe their own voice well enough to brief a stranger on it.
+
+So this kit skips the describing and goes after evidence. You get interviewed about your work, you fix a few AI drafts by hand and you hand over some things you've written. What comes out is a voice bible. It's a few pages on what you never do, what you do that an editor would wrongly fix and how your sentences get built, with the numbers behind all of it. You give that to Claude, ChatGPT, Gemini or whatever you use before it drafts or edits anything for you.
+
+The name comes from the one test every line has to pass: would you actually say this out loud?
 
 ## What it changes
 
-Both drafts below came from the same few lines of notes, for a made-up bookkeeper writing her monthly note to clients. The pair was written for this page as an illustration. A real one comes from your notes and your bible.
+Both drafts below came from the same few lines of notes. The bookkeeper is made up and so is the pair, so treat it as an illustration. A real one comes from your notes and your bible.
 
 **Her notes**
 
@@ -32,15 +36,15 @@ Both drafts below came from the same few lines of notes, for a made-up bookkeepe
 >
 > Next one of these is due on the 3rd.
 
-Nothing is wrong with the first draft, and it could have been written for anyone. The second is hers. The number comes first, there is no greeting, the procedure is numbered, there is one dry aside, and the next date sits where a sign-off would go. Her bible lists each of those habits, with a line of her own writing behind it.
+Nothing's wrong with the first draft. It could have been written for anybody. The second one is hers, with the number up front and no greeting, the steps numbered, one dry aside, and the next date sitting where a sign-off would go. Her bible lists every one of those habits and puts a line of her own writing behind each.
 
 ## What you need
 
-- About an hour
-- Any AI chat assistant
-- Optional, and worth it: a few things you wrote yourself, such as emails, posts or messages. Writing you did with no AI help is the most useful. If you have little of it, your own side of old chats with an AI counts, since you typed it and nobody polished it.
+About an hour and any AI chat assistant. That's it.
 
-No installation and no code. Everything is a prompt you copy and paste.
+It works better if you bring a few things you wrote yourself, like emails or posts. Whatever you wrote with no AI help is the most useful. If you don't have much of that, your side of old chats with an AI counts, since you typed it and nobody polished it.
+
+There's nothing to install and no code to run. Every step is a prompt you copy and paste.
 
 ## Build yours
 
@@ -51,15 +55,15 @@ No installation and no code. Everything is a prompt you copy and paste.
 | 3. Build the bible | [3-build-bible.md](prompts/3-build-bible.md) | 10 min | `voice-bible.md` |
 | 4. Make the short version | [4-voice-card.md](prompts/4-voice-card.md) | 2 min | `voice-card.md` |
 
-**Step 1.** Open the interview prompt, copy all of it, and paste it into a new chat. The AI asks about your work, your stories and your opinions, one question at a time. It will not ask you to describe your style. Near the end it shows you a few pairs of sentences and asks which sounds more like you. Answer out loud with dictation if you can, and do not tidy what comes out. At the end it hands you a transcript to save. If you would sooner answer on your own, the questions are in [reference/interview-questions.md](reference/interview-questions.md).
+**Step 1.** Open the interview prompt, copy the whole thing and paste it into a new chat. The AI asks about your work and what you actually think, one question at a time. It won't ask you to describe your style (you'd get it wrong, we all do). Talk your answers out loud with dictation if you can, and don't clean up what comes out. Near the end it shows you a few pairs of sentences and asks which one sounds more like you, and then it hands you a transcript to save. If you'd rather answer on your own time, the questions are in [reference/interview-questions.md](reference/interview-questions.md).
 
-**Step 2.** In the same chat, paste the edit exercise prompt. The AI writes three short passages about things you said, in its own style, and you rewrite each one the way you would say it. What you change is the strongest evidence in the whole process, so do not skip this if you can spare the time.
+**Step 2.** Stay in the same chat and paste the edit exercise prompt. The AI writes three short passages about things you just told it, in its own style, and you rewrite each one the way you'd say it. Don't be polite about it. What you change is the strongest evidence in the whole process, so if you only have time for one extra step then make it this one.
 
-**Step 3.** Open a new chat. Paste the build prompt, then your interview, your edits, and any writing samples you have. If you ran the stats script described below, paste its report too. For each sample, say whether you typed or dictated it, whether it is finished or rough, and whether an AI helped draft it. Before it writes anything, the AI shows you what it plans to ban and protect and asks a few questions. Then it gives you the bible.
+**Step 3.** Open a new chat. Paste the build prompt, then your interview, your edits and whatever writing samples you have. If you ran the stats script described below, paste its report too. Tell it which samples you typed and which you dictated, which are finished and which are rough, and whether an AI helped draft any of them. Before it writes anything it shows you what it plans to ban and what it plans to protect, and it asks a few questions. Then you get your bible.
 
-**Step 4.** In the same chat, say "card" to get a version short enough for a small instruction box.
+**Step 4.** Say "card" in that same chat and you get a version short enough for a small instruction box.
 
-You can stop after step 1 and still get a starter bible. Each extra kind of evidence makes it sharper.
+You can stop after step 1 and still walk away with a starter bible. Every extra kind of evidence makes it sharper.
 
 ## Use it
 
@@ -69,19 +73,19 @@ You can stop after step 1 and still get a starter bible. Each extra kind of evid
 | You want a draft checked | [use-check.md](prompts/use-check.md) |
 | You have edited a few AI drafts and want the bible to learn from them | [use-refresh.md](prompts/use-refresh.md) |
 
-[docs/using-your-bible.md](docs/using-your-bible.md) covers where to put the bible in each kind of app, the routine that keeps it improving, and how to tell whether it is working.
+[docs/using-your-bible.md](docs/using-your-bible.md) covers where to put the bible in each kind of app, the routine that keeps it getting better, and how to tell if it's working.
 
 ## What is in a voice bible
 
-- **The test.** One question to ask of every line: would you actually say this out loud?
-- **Hard no's.** AI habits you have rejected, in your edits or in so many words.
-- **Use sparingly.** Things you really do, with a ceiling so the AI does not do them in every paragraph.
-- **Leave these alone.** Habits an editor would fix that are yours.
-- **How you build sentences, paragraphs and whole pieces,** shown in your own quoted words.
-- **Mechanics.** Sentence length, punctuation and other numbers.
+- **The test.** One question for every line: would you actually say this out loud?
+- **Hard no's.** AI habits you've rejected, in your edits or in so many words.
+- **Use sparingly.** Things you really do, with a ceiling so the AI doesn't do them in every paragraph.
+- **Leave these alone.** Habits an editor would "fix" that are yours.
+- **How you build sentences, paragraphs and whole pieces,** shown in your own words.
+- **Mechanics.** Sentence length, punctuation and the rest of the numbers.
 - **Lexicon.** Words that are yours.
 - **By context.** What changes between a post, an email and a how-to.
-- **When editing your own drafts.** How much an AI may change, and what it must leave alone.
+- **When editing your own drafts.** How much an AI gets to change, and what it has to leave alone.
 - **Before and after.** Your real edits to AI drafts.
 
 Each rule is short and carries its evidence. Two entries from the made-up bookkeeper's bible:
@@ -109,20 +113,29 @@ The blank version is [templates/voice-bible.template.md](templates/voice-bible.t
 
 ## Why it is built this way
 
-Each of these came from getting it wrong first. [docs/how-it-works.md](docs/how-it-works.md) has the longer account.
+Every one of these came from getting it wrong first. The longer version is in [docs/how-it-works.md](docs/how-it-works.md).
 
-- **Nobody inherits a ban.** The list of [common AI tells](reference/ai-tells.md) is a set of questions to ask about your writing. If you have used em dashes for twenty years, they stay.
-- **Protected habits matter as much as banned ones.** A list of prohibitions with nothing protected will slowly edit you out of your own writing.
-- **Your edits say more than your descriptions.** What you change in a draft is better evidence of your habits than what you say you like. You still get the final word on every rule.
-- **Every rule cites your words.** A rule with no quote behind it is a guess.
-- **Written-down habits get overdone.** An AI that learns you like a certain move will use it constantly, so occasional habits carry limits.
-- **The bible shapes material and cannot supply it.** Drafting starts from your notes, your stories and your numbers. The prompts tell the AI to ask you questions when you give it only a topic, and never to invent an anecdote.
+**Nobody inherits a ban.** Most tools for this hand you a list of things AI does and strip all of them out. This kit treats that [list](reference/ai-tells.md) as questions to ask about YOUR writing. If you've been using em dashes for twenty years then they stay.
 
-This is for people who bring their own material and want help shaping it. Without what you know and what you change, the method has nothing to work from.
+There's one exception, though, and it's making things up. An invented story or number is a hard no for everybody. An AI that puts a story in your mouth has done something worse than sound like a robot.
+
+**Protected habits matter as much as banned ones.** Give an AI a list of don'ts and nothing else and it will slowly edit you out of your own writing.
+
+**Your edits say more than your opinions do.** What you change in a draft is better evidence of your habits than what you say you like. But you still get the final word on every rule.
+
+**Every rule cites your actual words.** A rule with no quote behind it is a guess.
+
+**Habits get overdone the minute they're written down.** Tell an AI that you sometimes open with a question and every draft opens with a question. So the occasional stuff comes with limits.
+
+**The bible can't supply the material.** It shapes what you bring. Drafting starts from your notes and your stories. And if you hand the AI nothing but a topic, the prompts tell it to ask you questions first.
+
+This is for people who show up with their own material and want help shaping it. If you don't bring what you know and what you'd change, there's nothing here for the method to work with.
+
+For the record, not all of this has been road-tested. The build prompt has had one full run on a real person's writing. The interview and the edit exercise haven't been tried on a real person yet. The details are at the bottom of [docs/how-it-works.md](docs/how-it-works.md).
 
 ## For Claude Code and the Claude apps
 
-[skill/voice-bible](skill/voice-bible/) packages the same prompts as a Claude skill. It runs the interview, reads your sample files, does the counting with a script instead of estimating, verifies every quote in the finished bible against your material, and saves everything to a folder.
+[skill/voice-bible](skill/voice-bible/) is the same set of prompts packaged as a Claude skill. It runs the interview, reads your sample files and counts with a script instead of estimating. It also checks every quote in the finished bible against your material and saves everything to a folder.
 
 In Claude Code, copy the folder into your personal skills directory:
 
@@ -134,7 +147,7 @@ Then ask Claude to help you build your voice bible. For the Claude apps, zip the
 
 ## The scripts
 
-All three need only Python 3.8 or newer.
+All three run on plain Python 3.8 or newer, with nothing to install.
 
 ```bash
 # The numbers behind your writing: sentence lengths, punctuation, habits, common AI tells
@@ -150,22 +163,22 @@ python3 tools/check_quotes.py voice-bible.md interview.md edits.md my-writing/
 python3 tools/check_invented.py draft.md notes.md
 ```
 
-The counts are approximate, and they cannot tell you whether something sounds like you. They show where to look.
+The counts are approximate and they can't tell you if something sounds like you. They tell you where to look.
 
 ## Privacy
 
-You will be pasting your own writing into whatever AI service you use, so check how that service handles what you give it. Change names and remove private details about other people before you paste. Your finished bible quotes you at length, so treat it as a personal document. If you build yours inside a copy of this repository, keep it in a folder named `my-voice/`, which git is set to ignore.
+You're going to be pasting your own writing into whatever AI service you use, so check how that service handles what you give it. Change names and take out private details about other people before you paste. Your finished bible quotes you at length, so treat it like a personal document. If you build yours inside a copy of this repo, keep it in a folder named `my-voice/`, which git is set to ignore.
 
 ## Related projects
 
-Other people are working on the same problem, and some of what is here follows their ideas.
+Other people are working on the same problem, and some of what's here follows their ideas.
 
-- [write-like-me](https://github.com/Hiro-Inagawa/write-like-me) measures a large body of your writing and enforces the result with a tested checker. If you have 20,000 words or more of your own writing and you work in Claude Code, its checking is stricter than anything here. The check for invented numbers and names in this kit follows an idea in its checker.
-- [inside-lago-voice-skill](https://github.com/getlago/inside-lago-voice-skill) is a short template you fill in yourself, built around the gap between what an AI drafted and what you sent. The section on editing your own drafts and the note on non-native English follow it.
+- [write-like-me](https://github.com/Hiro-Inagawa/write-like-me) measures a big pile of your writing and enforces the result with a tested checker. If you've got 20,000 words or more of your own writing and you work in Claude Code, its checking is stricter than anything here. The check for invented numbers and names in this kit follows an idea in its checker.
+- [inside-lago-voice-skill](https://github.com/getlago/inside-lago-voice-skill) is a short template you fill in yourself, built around the gap between what an AI drafted and what you actually sent. The section on editing your own drafts and the note on non-native English follow it.
 - [mydamnvoice](https://github.com/rangrot/mydamnvoice) runs a quick multiple-choice interview and exports to several chat apps. The "this or that" sentence pairs in the interview follow its idea.
-- [writing-style-skill](https://github.com/jzOcb/writing-style-skill) records each AI draft and your final version and extracts rules from the difference automatically. Its documentation is in Chinese.
+- [writing-style-skill](https://github.com/jzOcb/writing-style-skill) records each AI draft and your final version and pulls rules out of the difference automatically. Its documentation is in Chinese.
 
-If you only want the common AI habits removed and do not need the result to sound like one particular person, [humanizer](https://github.com/blader/humanizer) and [stop-slop](https://github.com/hardikpandya/stop-slop) are the widely used tools for that. This kit starts from the opposite assumption, that which habits to remove depends on who is writing.
+If all you want is the common AI habits stripped out and you don't care if the result sounds like one particular person, [humanizer](https://github.com/blader/humanizer) and [stop-slop](https://github.com/hardikpandya/stop-slop) are what most people use. This kit makes the opposite bet - the habits worth stripping depend on who's writing.
 
 ## What is here
 
