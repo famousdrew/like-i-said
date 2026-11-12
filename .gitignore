@@ -1,0 +1,9 @@
+# Private source material. Never publish.
+_source/
+
+# A person's own working folder when they build their bible inside a clone.
+my-voice/
+
+__pycache__/
+*.pyc
+.DS_Store
