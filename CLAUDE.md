@@ -26,6 +26,8 @@ The kit must not be written in the style it helps people avoid.
 - No "it's not X, it's Y," no reflexive lists of three, no announcing ("here's the thing"), no tidy capstone lines.
 - Plain, direct sentences. Prompts are written in the first person, as the user speaking to an AI.
 - The README's prose is the exception. It is written in the author's own voice, which allows a few things this list does not, such as a spaced hyphen used as a dash and sentences that start with "So" or "And." Do not tidy it to match the rest of the kit.
+- The README is also written for readers who will not read much. The first screen says what to do. Steps are numbered, and each one names its time and what you end up with. No list runs past five items. Figures of speech are replaced with the literal thing. The last line is one next action. Keep to this when you change it.
+- The made-up bookkeeper's note in the README should read like a real message from a real person: a friendly but firm request, with nothing in it that her notes do not contain. Run `tools/check_invented.py` on it against her notes after any change.
 - Each prompt in `prompts/` must work when pasted alone into any chat assistant, so it cannot refer to other files in this repository.
 
 ## Nothing personal in published files
